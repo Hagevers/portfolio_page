@@ -51,7 +51,7 @@
 }
 
 .lp__title > span{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .lp__title-flex{
@@ -60,6 +60,7 @@
     line-height: 1.05;
     display: flex;
     gap: 1rem;
+    font-size: 2rem;
 }
 
 .test{
@@ -123,7 +124,6 @@
 }
 
 .lp__flex-middle div{
-    /* background-color: #9d84b8; */
     height: 100%;
     width: 80%;
 }
@@ -216,14 +216,22 @@
 .middle-img{
     flex: 1;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 
 @media screen and (min-width: 1000px) {
+    .lp__title > span {
+        font-size: 2.5rem;
+    }
+    
+    .lp__title-flex {
+        font-size: 3.5rem;
+    }
+
     .lp__flex-right{
         display: block;
     }
+
     .lp__wrapper{
         flex-direction: row;
     }
