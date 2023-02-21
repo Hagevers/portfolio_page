@@ -1,0 +1,36 @@
+.tag__button{
+    background-color: #e7b678;
+    border-radius: .5rem;
+    height: 30px;
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    gap: 1px;
+    position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #111;
+    font-weight: 700;
+    border: 1.5px solid #e7b678;
+}
+
+.tag__button:focus {
+    outline: none;
+  }
+
+.tag__button:hover{
+    background-color: #181825;
+    color: #fafafd;
+}
+
+.tag__button{
+    flex: 1;
+}
+
+.tag__button-arrow{
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
