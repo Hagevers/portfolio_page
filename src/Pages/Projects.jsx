@@ -9,17 +9,17 @@ import useElementOnScreen from '../Hooks/useElementOnScreen'
 function Projects() {
 
   const projects = [
-    {title: 'Portfolio', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: portfolio_img, tags: ['Live Demo', 'GitHub']},
+    {title: 'Portfolio', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: portfolio_img, tags: ['GitHub']},
     {title: 'AIceberg', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: aiceberg_img, tags: ['Live Demo', 'GitHub']},
     {title: 'Fight Club', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: fightclub_img, tags: ['Live Demo', 'GitHub']},
-    {title: 'Portfolio', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: portfolio_img, tags: ['Live Demo', 'GitHub'], finished: false}
+    {title: 'Portfolio', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: portfolio_img, tags: ['GitHub'], finished: false}
   ]
 
   const projectsRef = useRef(null);
   const projectsVisible = useElementOnScreen({
     root: null,
     rootMargin: '0px',
-    threshold: 0.3
+    threshold: 0.1
   }, projectsRef);
 
   return (
