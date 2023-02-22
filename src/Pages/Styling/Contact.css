@@ -1,0 +1,107 @@
+.contact__container{
+    background: #e7b678;
+    color: #fff;
+    padding-top: 175px;
+    line-height: 18pt;
+    padding: 100px 0 30px 0;
+    position: relative;
+    margin-top: -1px;
+}
+
+.contact__container svg{
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.contact__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contact__title-sub{
+    margin-bottom: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    align-items: center;
+    gap: 1rem;
+    font-family: Circularxx,sans-serif;
+}
+
+.contact__form input{
+    background: #181825;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    outline: none;
+    padding: 10px 15px;
+    width: 50%;
+}
+
+.contact__form textarea{
+    background: #181825;
+    border: 0;
+    color: #fff;
+    display: block;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    outline: none;
+    font-family: Circularxx,sans-serif;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.contact__form input[type="submit"]{
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    width: 40%;
+    transition: all 0.5s ease;
+    margin-top: 2rem;
+}
+
+.contact__form input[type="submit"]:hover{
+    background-color: #181825;
+    border-color: #181825;
+}
+
+@media screen and (min-width: 600px) {
+    .contact__form textarea,
+    .contact__form input{
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .contact__form input[type="submit"]{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contact__form textarea{
+        min-height: 150px;
+        min-width: 90%;
+    }
+    .contact__form textarea,
+    .contact__form input{
+        width: 100%;
+    }
+
+    .contact__form input[type="submit"]{
+        width: 90%;
+    }
+}
