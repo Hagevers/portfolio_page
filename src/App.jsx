@@ -1,6 +1,7 @@
 import './App.css'
 import Projects from './Pages/Projects'
 import LandingPage from './Pages/LandingPage'
+import Skills from './Pages/Skills'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <LandingPage />
       <Projects />
+      <Skills />
     </div>
   )
 }
