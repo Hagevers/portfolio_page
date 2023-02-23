@@ -10,7 +10,11 @@ import github_logo from '../assets/Tools/github_logo.png'
 import npm_logo from '../assets/Tools/npm.png'
 import postman_logo from '../assets/Tools/postman.png'
 import vscode_logo from '../assets/Tools/vscode.png'
+import websocket_logo from '../assets/Back-End/websocket_logo.png'
+import Typescript_logo from '../assets/Front-End/Typescript_logo.png'
+import mongodb_logo from '../assets/Back-End/mongodb_logo.png'
 import useElementOnScreen from '../Hooks/useElementOnScreen'
+
 
 function Skills() {
 
@@ -29,6 +33,7 @@ function Skills() {
                 <h1>Frontend</h1>
                 <div className='skills-content'>
                     <div className="tech"><img src={react_logo} alt="react"/><span className='tooltip'>React JS</span></div>
+                    <div className="tech"><img src={Typescript_logo} alt="react"/><span className='tooltip'>Typescript</span></div>
                     <div className="tech"><img src={html_logo} alt="react"/><span className='tooltip'>HTML</span></div>
                     <div className="tech"><img src={css_logo} alt="react"/><span className='tooltip'>CSS</span></div>
                 </div>
@@ -38,6 +43,8 @@ function Skills() {
                 <div className='skills-content'>
                     <div className="tech"><img src={express_logo} alt="react"/><span className='tooltip'>Express JS</span></div>
                     <div className="tech"><img src={node_logo} alt="react"/><span className='tooltip'>Node JS</span></div>
+                    <div className="tech"><img src={websocket_logo} alt="react"/><span className='tooltip'>Web Socket</span></div>
+                    <div className="tech"><img src={mongodb_logo} alt="react"/><span className='tooltip'>MongoDB</span></div>
                 </div>
             </div>
             <div className={`skills-wrapper ${projectsVisible ? 'show' : null}`}>
