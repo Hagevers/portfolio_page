@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Pages/Styling/'
+import '../Pages/Styling/Rights.css'
 
 function Rights() {
   return (
