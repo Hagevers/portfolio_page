@@ -9,10 +9,10 @@ import useElementOnScreen from '../Hooks/useElementOnScreen'
 function Projects() {
 
   const projects = [
-    {title: 'Portfolio', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: portfolio_img, tags: ['GitHub']},
-    {title: 'AIceberg', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: aiceberg_img, tags: ['Live Demo', 'GitHub']},
-    {title: 'Fight Club', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: fightclub_img, tags: ['Live Demo', 'GitHub']},
-    {title: 'Portfolio', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: portfolio_img, tags: ['GitHub'], finished: false}
+    {title: 'Portfolio', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: portfolio_img, tags: [{text: 'GitHub', link: 'https://github.com/Hagevers/portfolio_page'}]},
+    {title: 'AIceberg', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: aiceberg_img, tags: [{text: 'Live Demo', link: 'https://aiceberg-app.netlify.app'}]},
+    {title: 'Fight Club', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: fightclub_img, tags: [{text: 'Live Demo', link: 'https://fight-clubs.netlify.app/'}, {text: 'GitHub', link: 'https://github.com/stars/Hagevers/lists/fightclub'}]},
+    {title: 'Portfolio', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: portfolio_img, tags: [{text: 'GitHub', link: 'https://github.com/Hagevers/portfolio_page'}], finished: false}
   ]
 
   const projectsRef = useRef(null);
@@ -50,7 +50,7 @@ function Projects() {
                   <div className="box-footer">
                     {project.tags.map((button, index)=>{
                       return (
-                        <TagButton text={button} key={index} />
+                        <TagButton text={button.text} key={index} link={button.link} />
                       )
                     })}
                   </div>

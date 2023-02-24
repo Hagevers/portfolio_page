@@ -38,7 +38,8 @@
     font-family: Circularxx,sans-serif;
 }
 
-.contact__form input{
+.contact__form input,
+.submit-btn{
     background: #181825;
     border: 0;
     border-radius: 5px;
@@ -65,28 +66,62 @@
     border-radius: 5px;
 }
 
-.contact__form input[type="submit"]{
+.submit-btn {
     background-color: transparent;
     border: 2px solid #fff;
     cursor: pointer;
     width: 40%;
     transition: all 0.5s ease;
     margin-top: 2rem;
+    position: relative;
+    min-height: 55px;
 }
 
-.contact__form input[type="submit"]:hover{
+.submit-btn:hover,
+.submit-btn.submit-contact{
     background-color: #181825;
     border-color: #181825;
 }
 
+.submit-contact{
+    position: relative;
+}
+
+.submit-contact::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner .5s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
 @media screen and (min-width: 600px) {
     .contact__form textarea,
-    .contact__form input{
+    .contact__form input,
+    .submit-btn{
         width: 90%;
         padding: 1rem;
     }
 
-    .contact__form input[type="submit"]{
+    .submit-btn{
         width: 70%;
     }
 }
@@ -97,11 +132,12 @@
         min-width: 90%;
     }
     .contact__form textarea,
-    .contact__form input{
+    .contact__form input,
+    .submit-btn{
         width: 100%;
     }
 
-    .contact__form input[type="submit"]{
+    .submit-btn{
         width: 90%;
         position: relative;
         margin-bottom: 5rem;
