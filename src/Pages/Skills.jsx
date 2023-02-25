@@ -13,6 +13,7 @@ import vscode_logo from '../assets/Tools/vscode.png'
 import websocket_logo from '../assets/Back-End/websocket_logo.png'
 import Typescript_logo from '../assets/Front-End/Typescript_logo.png'
 import mongodb_logo from '../assets/Back-End/mongodb_logo.png'
+import tRPC_logo from '../assets/Back-End/tRPC_logo.svg'
 import useElementOnScreen from '../Hooks/useElementOnScreen'
 
 
@@ -44,6 +45,7 @@ function Skills() {
                     <div className="tech"><img src={express_logo} alt="react"/><span className='tooltip'>Express JS</span></div>
                     <div className="tech"><img src={node_logo} alt="react"/><span className='tooltip'>Node JS</span></div>
                     <div className="tech"><img src={websocket_logo} alt="react"/><span className='tooltip'>Web Socket</span></div>
+                    <div className="tech"><img src={tRPC_logo} alt="react"/><span className='tooltip'>tRPC</span></div>
                     <div className="tech"><img src={mongodb_logo} alt="react"/><span className='tooltip'>MongoDB</span></div>
                 </div>
             </div>

@@ -51,7 +51,7 @@ function Contact({popupVisibility, setName, name}) {
               <input type="text" placeholder='Name' value={name} onChange={(e)=>setName(e.target.value)} />
               <input type="email" placeholder='Email' value={email} onChange={(e)=>setEmail(e.target.value)} />
               <textarea placeholder='Your message' value={message} onChange={(e)=>setMessage(e.target.value)} />
-              <span>{errorMessage}</span>
+              <span className='contact-err_msg'>{errorMessage}</span>
               <button className={`submit-btn ${showLoading ? 'submit-contact' : null}`}>
                 {!showLoading ? <span>Submit</span>:null}
               </button>

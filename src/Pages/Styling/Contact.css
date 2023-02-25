@@ -113,6 +113,12 @@
     }
 }
 
+.contact-err_msg{
+    color: #fa5353;
+    font-weight: 600;
+    font-family: Circularxx,sans-serif;
+}
+
 @media screen and (min-width: 600px) {
     .contact__form textarea,
     .contact__form input,
