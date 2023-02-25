@@ -30,6 +30,8 @@ function LandingPage() {
 
   return (
     <div className='lp__container' id='About' ref={aboutRef}>
+        <div className='app-first-bg-img'>
+        </div>
         <Navbar />
         <div className='lp__wrapper'>
           <div className={`lp__flex-left ${aboutVisible ? 'show' : null}`}>
