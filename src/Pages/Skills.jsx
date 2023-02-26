@@ -14,6 +14,7 @@ import websocket_logo from '../assets/Back-End/websocket_logo.png'
 import Typescript_logo from '../assets/Front-End/Typescript_logo.png'
 import mongodb_logo from '../assets/Back-End/mongodb_logo.png'
 import tRPC_logo from '../assets/Back-End/tRPC_logo.svg'
+import tailwind_logo from '../assets/Front-End/tailwind_logo.svg'
 import useElementOnScreen from '../Hooks/useElementOnScreen'
 
 
@@ -37,6 +38,7 @@ function Skills() {
                     <div className="tech"><img src={Typescript_logo} alt="react"/><span className='tooltip'>Typescript</span></div>
                     <div className="tech"><img src={html_logo} alt="react"/><span className='tooltip'>HTML</span></div>
                     <div className="tech"><img src={css_logo} alt="react"/><span className='tooltip'>CSS</span></div>
+                    <div className="tech"><img src={tailwind_logo} alt="react"/><span className='tooltip'>Tailwind</span></div>
                 </div>
             </div>
             <div className={`skills-wrapper ${projectsVisible ? 'show' : null}`}>

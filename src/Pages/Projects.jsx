@@ -10,8 +10,8 @@ function Projects() {
 
   const projects = [
     {title: 'Portfolio', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: portfolio_img, tags: [{text: 'GitHub', link: 'https://github.com/Hagevers/portfolio_page'}]},
-    {title: 'AIceberg', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: aiceberg_img, tags: [{text: 'Live Demo', link: 'https://aiceberg-app.netlify.app'}]},
-    {title: 'Fight Club', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: fightclub_img, tags: [{text: 'Live Demo', link: 'https://fight-clubs.netlify.app/'}, {text: 'GitHub', link: 'https://github.com/stars/Hagevers/lists/fightclub'}]},
+    {title: 'AIceberg', desc: 'A customer service application, gathering all messages from different platforms such as facebook, whatsapp, instagram, telegram to one place. integrating with CRM services', img: aiceberg_img, tags: [{text: 'Live Demo', link: 'https://aiceberg-app.netlify.app'}]},
+    {title: 'Fight Club', desc: 'Turn based game, build the strongest army and compete against others by gathering resources and raiding!', img: fightclub_img, tags: [{text: 'Live Demo', link: 'https://fight-clubs.netlify.app/'}, {text: 'GitHub', link: 'https://github.com/stars/Hagevers/lists/fightclub'}]},
     {title: 'Portfolio', desc: 'My personal portfolio website, contains my resume and project I have built with react, express and etc...', img: portfolio_img, tags: [{text: 'GitHub', link: 'https://github.com/Hagevers/portfolio_page'}], finished: false}
   ]
 
